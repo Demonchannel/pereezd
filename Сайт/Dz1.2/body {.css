@@ -1,0 +1,32 @@
+.color0 { background-color: blue; }
+.color1 { background-color: red; }
+.color2 { background-color: green; }
+
+body {
+    background-color: var(--main-color);
+  }
+  
+  body button {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .green {
+    background-color: green;
+  }
+  .blue {
+    background-color: blue;
+  }
+  .red {
+    background-color: red;
+  }
+  .black {
+    background-color: black;
+  }
+  .yellow {
+    background-color: yellow;
+  }
+ .myclass1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 6em
+}
