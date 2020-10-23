@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Timer</title>
+    <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="links">
+            <a data-mode="clock" class="clock selected" href="#" id="button1">clock</a>
+            <a data-mode="stopwatch" class="stopwatch" href="#" id="button2">stopwatch</a>
+            <a data-mode="timer" class="timer" href="#" id="button3">timer</a>
+        </div>
+        <div class="container-clock">
+            <div class="watch"></div>
+        </div>
+        <div class="container-stopWatch" hidden>
+            <div class="watch">
+            </div>
+            <div class="buttons">
+                <button class="start">Start</button>
+                <button class="stop ">Stop</button>
+                <button class="reset">Reset</button>
+            </div>
+        </div>
+        <div class="container-timer" hidden>
+            <div class="watch"></div>
+            <div class="buttons">
+                <button class="start">Start</button>
+                <button class="stop">Stop</button>
+                <button class="reset">Reset</button>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>

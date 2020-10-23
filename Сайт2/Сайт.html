@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xml:lang="en-US" lang="en-US">
+
+<head>
+    <title>Minisite Pro</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="assets/css/common.css" />
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+        </div>
+        <ul id="nav">
+            <li><a>Логин:login1 Пароль:pass1</a></li>
+        </ul>
+        <div id="content" class="clearfix">
+            <div id="col_1">
+                <h2>Information</h2>
+                <ul id="subnav">
+                    <li>
+                        <a href="https://1xbet.com/">1xBet</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="col_2">
+                <div align="center">
+                    <form>
+                        <input type="button" value="Войти на сайт" onClick="validate()">
+                    </form>
+                </div>
+                <script>
+                    function validate() {
+                        var log = new Array(),
+                            pas = new Array(),
+                            login_ok = false,
+                            user_name,
+                            password;
+                        log[0] = "login1";
+                        log[1] = "login2";
+                        pas[0] = "pass1";
+                        pas[1] = "pass2";
+                        user_name = prompt("Логин", "") || "";
+                        user_name = user_name.toLowerCase();
+                        password = prompt("Пароль", "") || "";
+                        password = password.toLowerCase();
+                        if (user_name == log[0] && password == pas[0]) {
+                            login_ok = true;
+                            window.location = "index.html";
+                        }
+                        if (user_name == log[1] && password == pas[1]) {
+                            login_ok = true;
+                            window.location = "index.html";
+                        }
+                        if (login_ok == false) {
+                            alert("Неверный логин или пароль!")
+                        };
+                    }
+                </script>
+
+            </div>
+        </div>
+</body>
+
+</html>
